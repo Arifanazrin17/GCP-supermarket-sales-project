@@ -5,3 +5,17 @@ Bucket (Cloud Function Source) → glsupermarket_sales_bucket/cloudfunction
 BigQuery Staging Table → acoustic-apex-469415-m0.GLSupermarket_record.staging_sales_data
 
 BigQuery Curated Table → acoustic-apex-469415-m0.GLSupermarket_record.sales_partitioned
+
+
+glsupermarket_project/
+├── cloud_function/
+│   ├── main.py
+│   ├── requirements.txt
+│   └── config.py
+├── airflow/
+│   ├── dags/
+│   │   ├── sales_pipeline_dag.py
+│   │   └── sql/
+│   │       └── create_partitioned.sql
+│   └── config.py   
+
